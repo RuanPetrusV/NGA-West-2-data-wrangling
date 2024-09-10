@@ -8,3 +8,5 @@ Columns were excluded either because they were not considered fit to be used to 
 Peak ground motion columns (column numbers 132,133,134) and frequency content (columns 135 through 245) were moved to the end of the table. Rows with null values in these columns were removed because I did not want to impute any values in them; I only wanted to use them to impute values in other columns. (One might actually want to leave out the peak ground motion because this database is usually used with them as outcome variables).
 
 Admittedly, this is still rough preliminary work. For a thorough job it should be documented which columns were dropped for what reasons, and correlations between columns should be investigated to determine properly the correlations between columns so as not to include highly correlated columns in the imputation.
+
+Side note: I was hasty in getting it to run. I have to do another version where I hold some data out to test the accuracy of my imputation. It is, after all, not only an imputation task, but a machine learning task as well.
